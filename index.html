@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Окна Хаус</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <header>
+            <div id="headerDiv">
+                <div id="logo">
+                    <img src="pic/logo.png" alt="Логотип Окна Хаус" />
+                </div>
+                <article id="headerText">
+                    <p class="active_header_btn text">Услуги</p>
+                    <p>Продукция</p>
+                    <p>О компании</p>
+                    <p>Портфолио</p>
+                    <p>Вопрос-ответ</p>
+                    <p>Контакты</p>
+                </article>
+                <div id="btn1">
+                    <img src="pic/calculator.png" alt="Калькулятор" />
+                    <p>Заявка на замер</p>
+                </div>
+                <div id="btn2">
+                    <img src="pic/ruler1.png" alt="Линейка" />
+                    <p>Заказать расчет</p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="pop_up" id="pop_up1">
+                <div class="pop_up_container">
+                    <div id="pop_up_order">
+                        <h1 id="order_text">Name, <br> Ваша заявка будет рассмотрена</h1>
+                        <p>
+                            На вашу почту придёт письмо. Пожалуйста, подтвердите заказ. 
+                        </p>
+                        <div id="close_pop_up_order">&#10006</div>
+                    </div>    
+                </div>
+            </div>
+            <div class="pop_up" id="pop_up2">
+                <div class="pop_up_container">
+                    <div id="pop_up_add">
+                        АКЦИЯ
+                        <div id="close_pop_up_add">&#10006</div>
+                    </div>    
+                </div>
+            </div>
+            <div id="banner">
+                <div id="bannerInfo">
+                    <div id="bannerSlogan">
+                            <div>
+                                <h3>Окна Хаус -</h3>
+                                <h1>Профессиональный подход <br/> к остеклению</h1>
+                            </div>           
+                            <div id="advantages">
+                                <div id="advantages1">
+                                    <img class="advantagesImg" src="pic/advantages1.png" alt="Окно">
+                                    <p>Современные окна <br>
+                                        и балконные конструкции <br>
+                                        по доступным ценам</p>
+                                </div>
+                                <div id="advantages2">
+                                    <img class="advantagesImg" src="pic/advantages2.png" alt="Медаль">
+                                    <p>Квалифицированный<br> 
+                                        подход к решению задач<br>
+                                        любой сложности</p>
+                                </div>
+                                <div id="advantages3">
+                                    <img class="advantagesImg" src="pic/advantages3.png" alt="Бланк">
+                                    <p>Гарантия<br> 
+                                        высочайшего качества<br> 
+                                        нашей продукции</p>
+                                </div>
+                            </div>       
+                    </div>
+                    
+                    <div id="order">
+                        <div id="rectangle">
+                            <p id="orderText">Вызвать замершика на дом</p>
+                            <div id="inputWin">
+                                <label><input type="text" placeholder="Представьтесь, пожалуйста" id="name_input"></label>
+                                <label><input type="text" placeholder="Номер телефона" id="number_input"></label>
+                                <label><input type="text" placeholder="E-mail" id="mail_input"></label>
+                            </div>
+                            <div id="invalid_info" class="inactive_error">
+                                <p style="color: red; font-size: small; margin: 0%;">Заполните все поля</p>
+                             </div>
+                            <div id="checkboxOrderText">
+                                <label><input type="checkbox" id="checkboxOrder"></label>
+                                <p>Согласен(на) на обработку персональных данных <br>
+                                    в соответствии с <a  href="agreement.html">политикой конфиденциальности</a></p>
+                             </div>
+                             
+                             <div id="orderBtn">
+                                <p>Отправить заявку</p>
+                             </div>
+                             
+                             <div id="ruler">
+                                <img id="rulerImg" src="pic/ruler2.png" alt="Линейка">
+                            </div>        
+                        </div>
+                        
+                      
+                    </div>
+                </div>
+            </div>
+            
+            <div id="mainServices">
+                <div id="services">
+                    <h1>Наши услуги</h1>
+                    <div id="servicesBaners">
+                        <div>
+                            <div id="services1" class="servicesBaner">
+                                <img src="pic/iconServices1.png" alt="Окно" class="imgServices">
+                                <h2 class="hServices">Установка<br>пластиковых окон</h2>
+                                <p class="pServices">Устанавливаем пластиковые окна<br>Rehau от проверенного производителя<br>c гарантией качества</p>
+                                <img src="pic/pointer.png" alt="Стрелка" id="pointer1">
+                            </div>
+                            <div id="services3" class="servicesBaner">
+                                <img src="pic/iconServices3.png" alt="Коттедж" class="imgServices">
+                                <h2 class="hServices">Остекление<br>коттеджей и дач</h2>
+                                <p class="pServices">Остекление и отделка под ключ:<br> от коттеджей и дач до террас<br> и беседок. Выделяем личного<br> технолога под каждый объект</p>
+                                <img src="pic/pointer.png" alt="Стрелка" id="pointer3">
+                            </div>
+                        </div>
+                        <div>
+                            <div id="services2" class="servicesBaner">
+                                <img src="pic/iconServices2.png" alt="Балкон" class="imgServices">
+                                <h2 class="hServices">Остекление балконов<br>и лоджий</h2>
+                                <p class="pServices">Занимаемся остеклением и отделкой<br> балконов и лоджий. Теплое и холодное<br> остекление, изготовление выносов и<br> крыш. Беремся за сложные объекты</p>
+                                <img src="pic/pointer.png" alt="Стрелка" id="pointer2">
+                            </div>
+                            <div id="services4" class="servicesBaner">
+                                <img src="pic/iconServices4.png" alt="Корпоративное здание" class="imgServices">
+                                <h2 class="hServices">Остекление<br>корпоративных объектов</h2>
+                                <p class="pServices">Реализуем сложные проекты<br> по остеклению торговых центров,<br> ресторанов, производственных помещений<br> и офисов</p>
+                                <img src="pic/pointer.png" alt="Стрелка" id="pointer4">
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div id="products">
+                    <h1>Продукция</h1>
+                    <div id="productsText">
+                        <div class="productsTextButton1"></div>
+                        <div class="inactiveText activeText" id="productsTextButton1">Стандарт</div>
+                        <div class="inactiveText" id="productsTextButton2">Бизнес</div>
+                        <div class="inactiveText" id="productsTextButton3">Премиум</div>
+                        <div class="inactiveText" id="productsTextButton4">Эксклюзив</div>   
+                        
+                    </div>
+                    
+                    <div id="productSelectionMain">
+                        <div id="button1" class="inactiveButton"><img src="pic/arrow.png" alt=""></div>
+                        <div class="viewport">      
+                            <div id="productSelection" class="picture1">
+                                <div id="productNum1" class="slide">
+                                    <img src="pic/window.png" alt="срез окна">
+                                    <div id="productInfo">
+                                        <h2>Rehau Blitz</h2>
+                                        <p>Сохраняют тепло в доме, защищают от шума<br> и вписываются в любой интерьер. <br>Практичный выбор</p>
+                                        <span>Системная глубина ...............................................60/60 мм <br>
+                                            Ширина стеклопакета...........................................24/31 мм <br>
+                                            Воздушные камеры...............................................3 <br>
+                                            Теплосопротивление............................................0,70 м2С/ВТ</span>
+                                    </div>
+                                </div>
+                                <div id="productNum2" class="slide">
+                                    <img src="pic/window.png" alt="срез окна">
+                                    <div id="productInfo">
+                                        <h2>Rehau Blitz №2</h2>
+                                        <p>Сохраняют тепло в доме, защищают от шума<br> и вписываются в любой интерьер. <br>Практичный выбор</p>
+                                        <span>Системная глубина ...............................................60/60 мм <br>
+                                            Ширина стеклопакета...........................................24/31 мм <br>
+                                            Воздушные камеры...............................................3 <br>
+                                            Теплосопротивление............................................0,70 м2С/ВТ</span>
+                                    </div>
+                                </div>
+                                <div id="productNum3" class="slide">
+                                    <img src="pic/window.png" alt="срез окна">
+                                    <div id="productInfo">
+                                        <h2>Rehau Blitz №3</h2>
+                                        <p>Сохраняют тепло в доме, защищают от шума<br> и вписываются в любой интерьер. <br>Практичный выбор</p>
+                                        <span>Системная глубина ...............................................60/60 мм <br>
+                                            Ширина стеклопакета...........................................24/31 мм <br>
+                                            Воздушные камеры...............................................3 <br>
+                                            Теплосопротивление............................................0,70 м2С/ВТ</span>
+                                    </div>
+                                </div>
+                                <div id="productNum4" class="slide">
+                                    <img src="pic/window.png" alt="срез окна">
+                                    <div id="productInfo">
+                                        <h2>Rehau Blitz №4</h2>
+                                        <p>Сохраняют тепло в доме, защищают от шума<br> и вписываются в любой интерьер. <br>Практичный выбор</p>
+                                        <span>Системная глубина ...............................................60/60 мм <br>
+                                            Ширина стеклопакета...........................................24/31 мм <br>
+                                            Воздушные камеры...............................................3 <br>
+                                            Теплосопротивление............................................0,70 м2С/ВТ</span>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>  
+                        <div id="button2"><img src="pic/arrow.png" alt=""></div>   
+                    </div>
+                    
+                </div>
+                <div id="guarantee">    
+                    <img id="guaranteeText" src="pic/schtandartText.png" alt="">   
+                    <div id="proof">
+                        <div class="proofs">
+                            <img src="pic/proof1.png" alt="">
+                            <p>Сертифицированный <br>
+                                производитель Rehau</p>
+                        </div>
+                        <div class="proofs">
+                            <img src="pic/proof2.png" alt="">
+                            <p>Инновационный <br>
+                                оконный завод</p>
+                        </div>
+                        <div class="proofs">
+                            <img src="pic/proof3.png" alt="">
+                            <p>Лидер по переработке <br>
+                                профилей Rehau в России</p>
+                        </div>
+                        <div class="proofs">
+                            <img src="pic/proof4.png" alt="">
+                            <p>Высокотехнологичное <br>
+                                автоматизированное <br>
+                                оборудование</p>
+                        </div>
+                        <div class="proofs">
+                            <img src="pic/proof5.png" alt="">
+                            <p>Широкий <br>
+                                ассортимент <br> 
+                                продукции</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="btn3">
+                    <img src="pic/ruler1.png" alt="Линейка" />
+                    <p>Заявка на замер</p>
+                </div>
+                <div id="aboutCompany"></div>
+            </div>
+            
+        </main>
+
+        <footer>
+            <div style="width: 1460px; display: flex; flex-direction: row; justify-content: space-around; align-items: center;">
+                
+                <div class="footer_Info">
+                    <img src="pic/logo2.png" alt="Логотип Окна Хаус">
+                    <p style="margin-left: 20px ;">© ООО “Окна Хаус”, 2011 - 2022</p>
+                </div>
+                <div class="footer_Info">
+                    <p><a href="agreement.html" style="text-decoration: none; color: white;">Политика кофиденциальности</a></p>
+                    <p><a href="agreement.html" style="text-decoration: none; color: white;">Пользовательское соглашение</a></p>
+                </div>
+            </div> 
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
