@@ -102,7 +102,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 1920px;
     height: 562px;
     background: url('pic/bannerImg.png') no-repeat center;
     background-size: cover;
