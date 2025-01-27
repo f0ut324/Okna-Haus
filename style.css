@@ -8,7 +8,10 @@ html{
 }
 body{
     @media (max-width:768px) {
-        margin-left: 200px; 
+        padding-left: 400px; 
+    }
+    @media (max-width:1024px) {
+        padding-left: 400px; 
     }
     padding-top: 98px;
     font-family: 'Roboto', sans-serif;
@@ -16,6 +19,7 @@ body{
     flex-direction: column;
     justify-content: center;
     margin: 0%;
+    background-color: #F2F2F2;
 }
 #headerDiv{
     position: fixed;
