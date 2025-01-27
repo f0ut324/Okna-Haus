@@ -7,6 +7,9 @@ html{
     overflow-x: hidden;  
 }
 body{
+    @media (max-width:768px) {
+        margin-left: 200px; 
+    }
     padding-top: 98px;
     font-family: 'Roboto', sans-serif;
     display: flex;
