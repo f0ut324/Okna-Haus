@@ -70,6 +70,11 @@ orderBtn.addEventListener('click', ()=>{
             invalid_info.classList.remove('active_error')
         }
     } 
+    if(mail_input.value == "SOSAL????"){
+        invalidInfoText.innerHTML = "ДА!!!!!";
+        invalid_info.classList.add('active_error');
+        invalid_info.classList.remove('inactive_error')
+    }
 })
 
 close_pop_up_order.addEventListener('click', ()=>{
