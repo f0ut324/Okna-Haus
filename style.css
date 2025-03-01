@@ -24,6 +24,9 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="number"] {
     -moz-appearance: textfield;
 }
+a{
+    text-decoration: none;
+}
 #headerDiv{
     position: fixed;
     display: flex;
@@ -197,6 +200,7 @@ h3{
     background-color: white;
 }
 #orderText{ 
+    margin-top: 50px;
     font-size: 18px;
     font-weight: 700;
     line-height: 21.09px;
@@ -318,16 +322,64 @@ input:focus{
     width: 595px;
     height: 519px;
     background-color: #EF7F04;
+    border-radius: 10px;
 }
 #inputWinBid{
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-#inputWinBid{
-    
+#inputWinBid input{
+    width: 395px;
+    height: 52px;
+    border-radius: 3px;     
+    background-color: white;   
+    margin: 10px;
 }
+#checkboxBidText{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#checkboxBidText p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.41px;
+    color: white;
+}
+#checkboxBid{
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;  
+}
+#orderBtn2{
+    cursor: pointer;
+    margin-top: 20px;
+    width: 258px;
+    height: 52px;
+    border-radius: 3px;
+    background-color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.75px;
+    color: #EF7F04;    
+}
+#close_pop_up_bid{
+    cursor: pointer;
+    position: relative;
+    width: 20.5px;
+    height: 20.5px;
+    top: -430px;
+    left: 270px;
+    font-size: 24px;
+    color: white;
+}
+
+
 
 #mainServices{
     display: flex;

@@ -52,7 +52,13 @@ services1.addEventListener('mouseout', ()=>{
 
 const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
 const PHONE_REGEXP = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
-
+function isEmpty(value){
+    if(value == ""){
+        return false;
+    }else{
+        return true;
+    }
+}
 function isPhoneValid(phone) { 
     return PHONE_REGEXP.test(phone);
 }
@@ -60,7 +66,7 @@ function isEmailValid(value) {
     return EMAIL_REGEXP.test(value);
 }
 orderBtn.addEventListener('click', ()=>{
-    if(name_input.value == "" || number_input.value == "" || mail_input.value == "" || checkboxOrder.checked == false || isEmailValid(mail_input.value)==false || isPhoneValid(number_input.value) == false){
+    if(isEmpty(name_input.value)==false || isEmpty(number_input.value)==false || isEmpty(mail_input.value)==false || isEmpty(checkboxOrder.checked)==false || isEmailValid(mail_input.value)==false || isPhoneValid(number_input.value) == false){
         invalid_info.classList.add('active_error')
         invalid_info.classList.remove('inactive_error')
     }else{
@@ -68,6 +74,7 @@ orderBtn.addEventListener('click', ()=>{
         pop_up1.classList.add('active_pop_up')
         if(invalid_info.classList.contains('active_error')){
             invalid_info.classList.remove('active_error')
+            invalid_info.classList.add('inactive_error')
         }
     } 
     if(mail_input.value == "SOSAL????"){
@@ -83,10 +90,18 @@ close_pop_up_order.addEventListener('click', ()=>{
         invalid_info.classList.remove('active_error')
     }
 })
-
-
-
-
+btn1.addEventListener('click', ()=>{
+    pop_up2.classList.add('active_pop_up')
+    if(invalid_info.classList.contains('active_error')){
+        invalid_info.classList.remove('active_error')
+    }
+})
+close_pop_up_bid.addEventListener('click', ()=>{
+    pop_up2.classList.remove('active_pop_up')
+    if(invalid_info.classList.contains('active_error')){
+        invalid_info.classList.remove('active_error')
+    }
+})
 function checkSlide(counter){
     if(counter == 1){
         productSelection.classList.add("picture1")

@@ -34,6 +34,7 @@
             </div>
         </header>
 
+
         <main>
             <div class="pop_up" id="pop_up1">
                 <div class="pop_up_container">
@@ -49,7 +50,11 @@
             <div class="pop_up" id="pop_up2">
                 <div class="pop_up_container">
                     <div id="pop_up_bid">
-                        <h1 style="font-family: Roboto; font-weight: 700;font-size: 24px;line-height: 28.13px;">Вызвать замерщика на дом</h1>
+                        <div style="display: flex;">
+                            <img src="pic/ruler1.svg" alt="" style="margin-right: 20px; width: 30px; height: 26px;">
+                            <h1 style="font-family: Roboto; font-weight: 700;font-size: 24px;line-height: 28.13px;">Вызвать замерщика на дом</h1>
+                        </div>
+                        
                         <div id="inputWinBid">
                             <label><input type="text" placeholder="Ваше имя" id="name_input_bid"></label>
                             <label><input type="number" placeholder="Номер телефона" id="number_input_bid"></label>
@@ -62,9 +67,11 @@
                          <div id="orderBtn2">
                             <p>Отправить заявку</p>
                          </div>
+                         <div id="close_pop_up_bid">&#10006</div>
                     </div>
                 </div>
             </div>
+            
             <div id="banner">
                 <div id="bannerInfo">
                     <div id="bannerSlogan">
@@ -103,7 +110,7 @@
                                 <label><input type="text" placeholder="E-mail" id="mail_input"></label>
                             </div>
                             <div id="invalid_info" class="inactive_error">
-                                <p style="color: red; font-size: small; margin: 0%;" id="invalidInfoText">Заполните все поля</p>
+                                <p style="color: red; font-size: small; margin: 0%;" id="invalidInfoText">Заполните все поля корректно</p>
                              </div>
                             <div id="checkboxOrderText">
                                 <label><input type="checkbox" id="checkboxOrder"></label>
