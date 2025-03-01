@@ -116,10 +116,6 @@ main{
     background-size: cover;
 }
 #bannerInfo{
-    @media (max-width:768px) {
-        display: flex; 
-        flex-direction: column;
-    }
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -128,10 +124,6 @@ main{
     max-width: 1156px;
 }
 #bannerSlogan{
-    @media (max-width:768px) {
-        display: flex; 
-        flex-direction: column;
-    }
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -140,18 +132,12 @@ main{
     height: 125.75px;
 }
 h1{
-    @media (max-width:768px) {
-        font-size: 24px;
-    }
     margin: 0%;
     font-size: 36px;
     font-weight: 200;
     color: white;
 }
 h3{
-    @media (max-width:768px) {
-        font-size: 14px;
-    }
     margin: 0%;
     font-size: 24px;
     font-weight: 700;
@@ -323,24 +309,24 @@ input:focus{
     left: 260px;
     font-size: 24px;
 }
-#pop_up_add{
+
+#pop_up_bid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    width: 595px;
+    height: 519px;
+    background-color: #EF7F04;
+}
+#inputWinBid{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;    
-    border-radius: 10px;
-    font-size: xx-large;
-    font-weight: bolder;
-    width: 595px;
-    height: 519px;
-    background-color: white; 
+    flex-direction: column;
 }
-#close_pop_up_add{
-    cursor: pointer;
-    position: relative;
-    top: -250px;
-    left: 265px;
-    font-size: 24px;
+#inputWinBid{
+    
 }
 
 #mainServices{
@@ -350,16 +336,11 @@ input:focus{
     flex-direction: column;
 }
 #services{
-    @media (max-width:768px) {
-        display: flex; 
-        flex-direction: column;
-        height: 922.25px;
-    }
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 1200px;
-    height: 1822.25px;
+    height: 622.25px;
     margin-top: 70px;
 }
 #services h1{
@@ -819,6 +800,7 @@ input:focus{
     margin: 15px;
 }
 #btn4{
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     background-color: #EF7F04;
@@ -870,10 +852,10 @@ input:focus{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 406px;
-    height: 428px;
-    top: 168px;
-    left: 1070px;
+    width: 511.5px;
+    height: 564px;
+    top: 5678px;
+    left: 1004.5px;
     border-radius: 10px;    
     background-color: white;        
 }
@@ -884,11 +866,17 @@ input:focus{
     letter-spacing: 0%;
     color: #2F2F51;
 }
+#inputWin2{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;  
+}
 #reviewBtn{
-    
+    cursor: pointer;
     width: 258px;
     height: 52px;
     border-radius: 3px;
+    margin-top: 15px;
     background-color: #2F2F51;  
     text-align: center;
     color: white;  
@@ -896,8 +884,25 @@ input:focus{
     font-size: 16px;
     line-height: 18.75px;  
 }
+#checkboxReviewText{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#checkboxReviewText p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+}
+#checkboxReview{
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+}
+
 
 footer{
+    margin-top: 35px;
     display: flex;
     justify-content: center;
     align-items: center;

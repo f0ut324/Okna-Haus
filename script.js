@@ -18,6 +18,11 @@ document.addEventListener('scroll',()=>{
         p[1].classList.remove('active_header_btn')
         p[2].classList.add('active_header_btn')
         p[3].classList.remove('active_header_btn')
+    }else if(y > 3500){
+        p[0].classList.remove('active_header_btn')
+        p[1].classList.remove('active_header_btn')
+        p[2].classList.remove('active_header_btn')
+        p[3].classList.add('active_header_btn')
     }
 })
 services4.addEventListener('mouseover', ()=>{
@@ -45,8 +50,17 @@ services1.addEventListener('mouseout', ()=>{
     pointer1.src = 'pic/pointer.svg';
 })
 
+const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+const PHONE_REGEXP = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
+
+function isPhoneValid(phone) { 
+    return PHONE_REGEXP.test(phone);
+}
+function isEmailValid(value) {
+    return EMAIL_REGEXP.test(value);
+}
 orderBtn.addEventListener('click', ()=>{
-    if(name_input.value == "" || number_input.value == "" || mail_input.value == "" || checkboxOrder.checked != true){
+    if(name_input.value == "" || number_input.value == "" || mail_input.value == "" || checkboxOrder.checked == false || isEmailValid(mail_input.value)==false || isPhoneValid(number_input.value) == false){
         invalid_info.classList.add('active_error')
         invalid_info.classList.remove('inactive_error')
     }else{
