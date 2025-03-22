@@ -316,6 +316,13 @@ textarea:focus{
     left: 260px;
     font-size: 24px;
 }
+#close_pop_up_review{
+    cursor: pointer;
+    position: relative;
+    top: -290px;
+    left: 260px;
+    font-size: 24px;
+}
 
 #pop_up_bid{
     display: flex;
@@ -381,6 +388,73 @@ textarea:focus{
     font-size: 24px;
     color: white;
 }
+
+
+#pop_up_calculation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    width: 595px;
+    height: 519px;
+    background-color:#2F2F51;
+    border-radius: 10px;
+}
+#inputWinCalculation{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#inputWinCalculation input{
+    width: 395px;
+    height: 52px;
+    border-radius: 3px;     
+    background-color: white;   
+    margin: 10px;
+}
+#close_pop_up_calculation{
+    cursor: pointer;
+    position: relative;
+    width: 20.5px;
+    height: 20.5px;
+    top: -430px;
+    left: 270px;
+    font-size: 24px;
+    color: white;
+}
+#checkboxCalculationText{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#checkboxCalculationText p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.41px;
+    color: white;
+}
+#checkboxCalculation{
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;  
+}
+#orderBtn3{
+    cursor: pointer;
+    margin-top: 20px;
+    width: 258px;
+    height: 52px;
+    border-radius: 3px;
+    background-color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.75px;
+    color:#2F2F51;    
+}
+
 
 
 
@@ -858,6 +932,7 @@ textarea:focus{
     cursor: pointer;
     display: flex;
     flex-direction: row;
+    align-items: center;
     background-color: #EF7F04;
     width: 312;
     height: 54.5;
@@ -872,6 +947,8 @@ textarea:focus{
 #btn4 img{
     margin-left: 20px;
     margin-right: 20px;
+    width: 20px;
+    height: 17px;
 }
 #btn4 p{
     margin-right: 20px;

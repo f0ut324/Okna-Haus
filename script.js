@@ -2,22 +2,22 @@
 const p = document.querySelectorAll('article > p')
 document.addEventListener('scroll',()=>{
     let y = parseInt(window.pageYOffset)
-    if (y < 800){
+    if (y < 1300){
         p[0].classList.add('active_header_btn')
         p[1].classList.remove('active_header_btn')
         p[2].classList.remove('active_header_btn')
         p[3].classList.remove('active_header_btn')
-    }else if(y > 1200 && y < 2500){
+    }else if(y > 1300 && y < 2500){
         p[0].classList.remove('active_header_btn')
         p[1].classList.add('active_header_btn')
         p[2].classList.remove('active_header_btn')
         p[3].classList.remove('active_header_btn')
-    }else if(y > 2500 && y < 3650){
+    }else if(y > 2500 && y < 3750){
         p[0].classList.remove('active_header_btn')
         p[1].classList.remove('active_header_btn')
         p[2].classList.add('active_header_btn')
         p[3].classList.remove('active_header_btn')
-    }else if(y > 3650){
+    }else if(y > 3750){
         p[0].classList.remove('active_header_btn')
         p[1].classList.remove('active_header_btn')
         p[2].classList.remove('active_header_btn')
@@ -25,16 +25,16 @@ document.addEventListener('scroll',()=>{
     }
 })
 p[0].addEventListener('click', ()=>{ //перелистывание по нажатии на текст в шапке
-    window.scrollTo(0,600)
+    window.scrollTo(0,620)
 })
 p[1].addEventListener('click', ()=>{
-    window.scrollTo(0,1350)
+    window.scrollTo(0,1380)
 })
 p[2].addEventListener('click', ()=>{
-    window.scrollTo(0,2550)
+    window.scrollTo(0,2610)
 })
 p[3].addEventListener('click', ()=>{ 
-    window.scrollTo(0,3750)
+    window.scrollTo(0,3810)
 })
 services4.addEventListener('mouseover', ()=>{
     pointer4.src = 'pic/orangePointer.svg';
@@ -101,6 +101,12 @@ close_pop_up_order.addEventListener('click', ()=>{ //закрытие pop up о�
         invalid_info.classList.remove('active_error')
     }
 })
+close_pop_up_review.addEventListener('click', ()=>{ //закрытие pop up окна заявки банера
+    pop_up4.classList.remove('active_pop_up')
+    if(invalid_info.classList.contains('active_error')){
+        invalid_info.classList.remove('active_error')
+    }
+})
 const arrRequestBooklets = document.querySelectorAll('.arrRequestBooklets')
 close_pop_up_bid.addEventListener('click', ()=>{ //закрытие pop up заявки на замер из шапки
     pop_up2.classList.remove('active_pop_up')
@@ -110,13 +116,16 @@ close_pop_up_bid.addEventListener('click', ()=>{ //закрытие pop up за�
 })
 for(let i =0; i < arrRequestBooklets.length; i++){
     arrRequestBooklets[i].addEventListener('click', ()=>{    //появление pop up заявки на замер из шапки
-        console.log("YES");
         pop_up2.classList.add('active_pop_up')
         if(invalid_info.classList.contains('active_error')){
             invalid_info.classList.remove('active_error')
         }
     })  
 }
+
+
+
+
 orderBtn2.addEventListener('click', ()=>{ 
     if(isEmpty(name_input_bid.value)==false || isEmpty(number_input_bid.value)==false || isEmpty(mail_input_bid.value)==false || isEmpty(checkboxBid.checked)==false || isEmailValid(mail_input_bid.value)==false || isPhoneValid(number_input_bid.value) == false){
         invalid_info_bid.classList.add('active_error')
@@ -131,6 +140,54 @@ orderBtn2.addEventListener('click', ()=>{
         if(invalid_info_bid.classList.contains('active_error')){
             invalid_info_bid.classList.remove('active_error')
             invalid_info_bid.classList.add('inactive_error')
+        }
+    } 
+})
+
+const arrRequestСounting = document.querySelectorAll('.arrRequestСounting')
+close_pop_up_calculation.addEventListener('click', ()=>{ //закрытие pop up заявки на расчет из шапки
+    pop_up3.classList.remove('active_pop_up')
+    if(invalid_info.classList.contains('active_error')){
+        invalid_info.classList.remove('active_error')
+    }
+})
+for(let i =0; i < arrRequestСounting.length; i++){
+    arrRequestСounting[i].addEventListener('click', ()=>{    //появление pop up заявки на замер из шапки
+        pop_up3.classList.add('active_pop_up')
+        if(invalid_info.classList.contains('active_error')){
+            invalid_info.classList.remove('active_error')
+        }
+    })  
+}
+
+orderBtn3.addEventListener('click', ()=>{ 
+    if(isEmpty(name_input_calculation.value)==false || isEmpty(number_input_calculation.value)==false || isEmpty(mail_input_calculation.value)==false || isEmpty(checkboxCalculation.checked)==false || isEmailValid(mail_input_calculation.value)==false || isPhoneValid(number_input_calculation.value) == false){
+        invalid_info_calculation.classList.add('active_error')
+        invalid_info_calculation.classList.remove('inactive_error')
+    }else{
+        pop_up3.classList.remove('active_pop_up')
+        if(invalid_info.classList.contains('active_error')){
+            invalid_info.classList.remove('active_error')
+        }
+        order_text.innerHTML = name_input_calculation.value + ", <br> Ваша заявка будет рассмотрена</h1>"
+        pop_up1.classList.add('active_pop_up')
+        if(invalid_info_calculation.classList.contains('active_error')){
+            invalid_info_calculation.classList.remove('active_error')
+            invalid_info_calculation.classList.add('inactive_error')
+        }
+    } 
+})
+
+reviewBtn.addEventListener('click', ()=>{ 
+    if(isEmpty(name_input1.value)==false || isEmpty(email_input.value)==false || isEmpty(review_input.value)==false || isEmpty(checkboxReview.checked)==false || isEmailValid(email_input.value)==false){
+        invalid_info2.classList.add('active_error')
+        invalid_info2.classList.remove('inactive_error')
+    }else{
+        order_review.innerHTML = name_input1.value + ", <br>Ваш отзыв будет рассмотрен</h1>"
+        pop_up4.classList.add('active_pop_up')
+        if(invalid_info2.classList.contains('active_error')){
+            invalid_info2.classList.remove('active_error')
+            invalid_info2.classList.add('inactive_error')
         }
     } 
 })

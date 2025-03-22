@@ -2,7 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="viewport" content="width=1920, initial-scale=1.0" />
         <meta content="true" name="HandheldFriendly" />
         <meta content="width" name="MobileOptimized" />
         <meta content="yes" name="apple-mobile-web-app-capable" />        
@@ -27,7 +27,7 @@
                     <img src="pic/ruler1.svg" alt="Калькулятор" />
                     <p>Заявка на замер</p>
                 </div>
-                <div id="btn2">
+                <div id="btn2" class="arrRequestСounting">
                     <img src="pic/calculator.svg" alt="Линейка" />
                     <p>Заказать расчет</p>
                 </div>
@@ -47,6 +47,17 @@
                     </div>    
                 </div>
             </div>
+            <div class="pop_up" id="pop_up4">
+                <div class="pop_up_container">
+                    <div id="pop_up_order">
+                        <h1 id="order_review">Name, <br> Ваш отзыв будет рассмотрен</h1>
+                        <p>
+                            На вашу почту придёт письмо. Пожалуйста, подтвердите отправку отзыва. 
+                        </p>
+                        <div id="close_pop_up_review">&#10006</div>
+                    </div>    
+                </div>
+            </div>
             <div class="pop_up" id="pop_up2">
                 <div class="pop_up_container">
                     <div id="pop_up_bid">
@@ -61,7 +72,7 @@
                             <label><input type="text" placeholder="E-mail" id="mail_input_bid"></label>
                         </div>
                         <div id="invalid_info_bid" class="inactive_error">
-                            <p style="color: red; font-size: small; margin: 0%;">Заполните все поля корректно</p>
+                            <p style="color: white; font-size: small; margin: 0%;">Заполните все поля корректно</p>
                         </div>
                         <div id="checkboxBidText">
                             <label><input type="checkbox" id="checkboxBid"></label>
@@ -74,7 +85,34 @@
                     </div>
                 </div>
             </div>
-            
+            <div class="pop_up" id="pop_up3">
+                <div class="pop_up_container">
+                    <div id="pop_up_calculation">
+                        <div style="display: flex;">
+                            <img src="pic/calculator.svg" alt="" style="margin-right: 20px; width: 30px; height: 26px;">
+                            <h1 style="font-family: Roboto; font-weight: 700;font-size: 24px;line-height: 28.13px;">Заказать расчет</h1>
+                        </div>
+                        
+                        <div id="inputWinCalculation">
+                            <label><input type="text" placeholder="Ваше имя" id="name_input_calculation"></label>
+                            <label><input type="number" placeholder="Номер телефона" id="number_input_calculation"></label>
+                            <label><input type="text" placeholder="E-mail" id="mail_input_calculation"></label>
+                        </div>
+                        <div id="invalid_info_calculation" class="inactive_error">
+                            <p style="color: white; font-size: small; margin: 0%;">Заполните все поля корректно</p>
+                        </div>
+                        <div id="checkboxCalculationText">
+                            <label><input type="checkbox" id="checkboxCalculation"></label>
+                            <p>Я согласен(на) на обработку <a  href="agreement.html">персональных данных</a></p>
+                         </div>
+                         <div id="orderBtn3">
+                            <p>Отправить заявку</p>
+                         </div>
+                         <div id="close_pop_up_calculation">&#10006</div>
+                    </div>
+                </div>
+            </div>
+
             <div id="banner">
                 <div id="bannerInfo">
                     <div id="bannerSlogan">
@@ -264,7 +302,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="btn3" >
+                <div id="btn3" class="arrRequestСounting">
                     <img src="pic/calculator.svg" alt="Калькулятор" />
                     <p>Заказать расчет</p>
                 </div> 
@@ -470,7 +508,6 @@
                             <div id="inputWin2">
                                 <label style="margin: 4px;"><input type="text" placeholder="Ваше имя" id="name_input1"></label>
                                 <label style="margin: 4px;"><input type="email" placeholder="E-mail" id="email_input"></label>
-                                <!-- <label style="margin: 4px;"><input type="text" placeholder="Ваш отзыв" id="review_input"></label> -->
                                 <label style="margin: 7px; margin-left: 7px;"><textarea style="margin: 4px;" placeholder="Ваш отзыв" id="review_input"></textarea></label>
                             </div>
                             <div id="invalid_info2" class="inactive_error">
@@ -495,7 +532,7 @@
                 
                 <div class="footer_Info">
                     <img src="pic/logo2.svg" alt="Логотип Окна Хаус" style="width: 55px; height: 38.7px;">
-                    <p style="margin-left: 20px ;">© ООО “Окна Хаус”, 2011 - 2022</p>
+                    <p style="margin-left: 20px ;">© ООО “Окна Хаус”, 2011 - 2025</p>
                 </div>
                 <div class="footer_Info">
                     <p><a href="agreement.html" style="text-decoration: none; color: white;">Политика кофиденциальности</a></p>
